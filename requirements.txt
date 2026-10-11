@@ -1,0 +1,13 @@
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+pyyaml>=6.0
+torch>=2.4
+transformers>=4.46
+peft>=0.13
+datasets>=3.0
+accelerate>=1.0
+psutil>=5.9  #For cpu memory usage
+jupyter>=1.0
+ipykernel>=6.29
+streamlit>=1.38
