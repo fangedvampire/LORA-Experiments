@@ -1,0 +1,17 @@
+# Tool configuration only. The project is run from the repository root
+# (python -m src.lora.train ...), so no packaging/installation step is needed.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]          # lets tests do `from src.lora.lora_layer import ...`
+addopts = "-ra -q"
+markers = [
+    "slow: tests that download a pretrained model (deselect with -m 'not slow')",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

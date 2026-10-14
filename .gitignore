@@ -1,0 +1,53 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+
+# ---------- Secrets ----------
+.env
+*.pem
+*.key
+
+# ---------- VS Code (keep shared settings, ignore personal ones) ----------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+
+# ---------- ML artifacts: never commit these ----------
+.hf_cache/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+checkpoints/
+wandb/
+runs/
+
+# ---------- Generated outputs (keep only the README that documents the folder) ----------
+outputs/*
+!outputs/README.md
+
+# ---------- Datasets (keep only the README and the tiny hand-written sample) ----------
+data/*
+!data/README.md
+!data/sample_*.jsonl
